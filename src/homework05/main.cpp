@@ -1,5 +1,7 @@
 #include "Matrix.h"
 #include <cstdio>
+#include <string>
+#include <iostream>
 
 int main()
 {
@@ -7,5 +9,5 @@ int main()
     Matrix mat1(a,3); mat1.Print();
     Matrix mat2 (mat1); mat2.Print();
     mat1.Add (mat2);
-    mat1.Print();
+    mat1.Print();  
 }
