@@ -1,4 +1,6 @@
 #include "Matrix.h"
+#include <cstdio>
+#include <assert.h>
 Matrix::Matrix(int *a, int _n): n(_n) {
     arr = new int *[n];
     for(int i = 0; i < n; i++) {
@@ -39,4 +41,17 @@ Matrix &Matrix::operator=(const Matrix &other) {
         }
     }
     return *this;
+}
+
+void Matrix::Print() {
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < n; j++)
+            printf("%d%c", arr[i][j], " \n"[j + 1 == n]);
+}
+
+void Matrix::Add(const Matrix& mat) {
+    assert(n == mat.n);
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < n; j++)
+            arr[i][j] += mat.arr[i][j];
 }

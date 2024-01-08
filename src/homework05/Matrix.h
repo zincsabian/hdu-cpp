@@ -8,4 +8,6 @@ public:
     Matrix(const Matrix&);
     ~Matrix();
     Matrix &operator=(const Matrix&);
+    void Add(const Matrix&);
+    void Print();
 };
