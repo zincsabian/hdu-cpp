@@ -4,3 +4,12 @@
 
 ## user story
 
+编译指令
+```shell
+g++ --std=c++11 test.cpp String.cpp -o test
+```
+
+编译之后执行可执行文件即可
+```shell
+./test
+```
