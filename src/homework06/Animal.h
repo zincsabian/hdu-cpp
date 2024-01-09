@@ -7,7 +7,7 @@ public:
     char* name;
     int length;
     int weight;
-
+    
     animal(const char* _name, int _length, int _weight) :
         length(_length), weight(_weight) {
         int len = strlen(_name);
